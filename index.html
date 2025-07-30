@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Agro La Joya E.I.R.L.</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e6f4e4;
+      color: #333;
+    }
+    
+    header {
+      background-color: #4caf50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    
+    h2 {
+      color: #2e7d32;
+    }
+    
+    .producto {
+      background: white;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .producto button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%; /* Botón ocupa todo el ancho */
+    }
+    
+    .producto button:hover {
+      background-color: #45a049;
+    }
+    
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header, footer {
+        padding: 15px;
+      }
+      
+      .producto {
+        padding: 10px;
+      }
+      
+      .producto button {
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mi Agro La Joya E.I.R.L.</h1>
+    <p>¡Mejoremos el campo arequipeño!</p>
+  </header>
+  <section>
+    <p><strong>En Mi Agro La Joya E.I.R.L.</strong> apoyamos al agricultor arequipeño con productos de calidad para mejorar su producción. Ofrecemos fertilizantes y pesticidas confiables, con atención cercana y cotizaciones personalizadas. ¡Haz tu pedido y haz crecer tu campo con nosotros!</p>
+
+    <h2>Fertilizantes</h2>
+    <div class="producto">Urea<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Urea')">Pedir</button></div>
+    <div class="producto">Nitrato de Amonio<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Nitrato de Amonio')">Pedir</button></div>
+    <div class="producto">Sulfato de Magnesio<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Sulfato de Magnesio')">Pedir</button></div>
+    <div class="producto">Fosfato Monoamónico<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Fosfato Monoamónico')">Pedir</button></div>
+    <div class="producto">Nitrato de Potasio<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Nitrato de Potasio')">Pedir</button></div>
+    <div class="producto">Sulfato de Potasio<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Sulfato de Potasio')">Pedir</button></div>
+    <div class="producto">Sulfato de Cobre<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Sulfato de Cobre')">Pedir</button></div>
+
+    <h2>Insecticidas</h2>
+    <div class="producto">Actara 25 WG<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Actara 25 WG')">Pedir</button></div>
+    <div class="producto">Galgotrin<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Galgotrin')">Pedir</button></div>
+    <div class="producto">Movento<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Movento')">Pedir</button></div>
+    <div class="producto">Abamex<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Abamex')">Pedir</button></div>
+    <div class="producto">K-ñon<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('K-ñon')">Pedir</button></div>
+
+    <h2>Herbicidas</h2>
+    <div class="producto">Herbostato<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Herbostato')">Pedir</button></div>
+    <div class="producto">Bazuka<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Bazuka')">Pedir</button></div>
+    <div class="producto">Sekador<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Sekador')">Pedir</button></div>
+    <div class="producto">Oh-bama<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Oh-bama')">Pedir</button></div>
+    <div class="producto">Sencor<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Sencor')">Pedir</button></div>
+
+    <h2>Fungicidas</h2>
+    <div class="producto">Galben<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Galben')">Pedir</button></div>
+    <div class="producto">Mertec<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Mertec')">Pedir</button></div>
+    <div class="producto">Antracol<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Antracol')">Pedir</button></div>
+    <div class="producto">Score<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Score')">Pedir</button></div>
+    <div class="producto">Vivando<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Vivando')">Pedir</button></div>
+
+    <h2>Nematicidas</h2>
+    <div class="producto">Vydate<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Vydate')">Pedir</button></div>
+    <div class="producto">Hunter<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Hunter')">Pedir</button></div>
+    <div class="producto">Mocap<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Mocap')">Pedir</button></div>
+    <div class="producto">Nemathor<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Nemathor')">Pedir</button></div>
+    <div class="producto">Nemabec<br><small>💬 Solicita tu precio por WhatsApp.</small><br><button onclick="pedir('Nemabec')">Pedir</button></div>
+  </section>
+  <footer>
+    <p>Mi Agro La Joya E.I.R.L. | Contacto: 945660600 / 948601222</p>
+    <p>Horario: 6:00 a.m. – 7:00 p.m. | Sedes en La Joya, San Camilo, Cruce, Pedregal</p>
+  </footer>
+  <script>
+    function pedir(producto) {
+      const numero = "945660600";
+      const mensaje = `Hola, quiero cotizar el producto: ${producto}`;
+      const url = `https://wa.me/51${numero}?text=${encodeURIComponent(mensaje)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
